@@ -14,8 +14,7 @@ Fournis donc les règles de gestion et le dictionnaire de données.
 
 
 
-
-< ceci est la réponse renvoyé par l'IA >
+# Réponse renvoyé par l'IA
 
 1. Règles de gestion
 
