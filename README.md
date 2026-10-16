@@ -97,7 +97,7 @@ Les formats de dates, la précision des décimales et les valeurs possibles indi
 Aucun regroupement de ces données n’est imposé. C’est à toi de décider comment les organiser, quels identifiants retenir et comment les relier.
 Pense aux données propres à un lien entre deux éléments plutôt qu’à un seul (résultat d’un athlète à un test, bilan d’un athlète lors d’une séance, date d’arrivée dans une équipe).
 
-Fichier de la réponse renvoyé par l'IA [réponse renvoyé par l'IA.pdf](https://github.com/user-attachments/files/33536693/reponse.renvoye.par.l.IA.pdf)
+Fichier de la réponse renvoyé par l'IA : [réponse renvoyé par l'IA.pdf](https://github.com/user-attachments/files/33536693/reponse.renvoye.par.l.IA.pdf)
 
 L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
 
