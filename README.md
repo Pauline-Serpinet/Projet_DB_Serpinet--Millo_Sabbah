@@ -100,7 +100,13 @@ Aucun regroupement de ces données n’est imposé. C’est à toi de décider c
 Pense aux données propres à un lien entre deux éléments plutôt qu’à un seul (résultat d’un athlète à un test, bilan d’un athlète lors d’une séance, date d’arrivée dans une équipe).
 
 Capture d'écran de la réponse renvoyé par l'I.A
-<img width="381" height="763" alt="image" src="https://github.com/user-attachments/assets/69ec5558-4a2c-45c5-8287-0a74be48247b" />
-<img width="251" height="649" alt="image" src="https://github.com/user-attachments/assets/e94219b0-9e6a-4a5b-aa46-c2f612e2946e" />
+<img width="1114" height="1330" alt="image" src="https://github.com/user-attachments/assets/f9d187f4-52f4-4b32-845a-20f72e39f79e" />
+<img width="1084" height="992" alt="image" src="https://github.com/user-attachments/assets/024d48ed-4f94-4e6b-9ada-aed362a8d0c5" />
+<img width="1054" height="1368" alt="image" src="https://github.com/user-attachments/assets/75c9e7d1-f251-4483-b857-8d98278a9633" />
+<img width="1054" height="1100" alt="image" src="https://github.com/user-attachments/assets/27655b80-2721-44cd-8ddb-eb1f55ff64e4" />
+
+
+
+
 
 
