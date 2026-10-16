@@ -101,6 +101,11 @@ Fichier de la réponse renvoyé par l'IA : [réponse renvoyé par l'IA.pdf](http
 
 L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
 
+## Etape 2 : MCD
+<img width="743" height="547" alt="image" src="https://github.com/user-attachments/assets/493112d7-2491-4aeb-9f4f-5a8f1fe7c745" />
+
+
+
 
 
 
