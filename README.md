@@ -4,7 +4,7 @@
 ## Etape 1 : Analyser les besoins
 Pour ce projet, nous avons décidé de concevoir une base de données pour une entreprise spécialisée dans le suivi de la performance sportive, en modélisant la collecte de données métriques issues de capteurs connectés ainsi que l'historique médical et d'entraînement d'athlètes de haut niveau
 
-# Prompt envoyé à l'ia
+### Prompt envoyé à l'ia
 Tu travailles dans le domaine du sport. Ton entreprise a comme activité de mesurer les performances sportives des athlètes de haut niveau. C’est une entreprise comme Sportech et Kinexon, STATSport, FirstBeat, Zone7. Les données sont collectées sur des athlètes de haut niveau (individuels et en équipe), lors de leurs séances d'entraînement, de tests physiques et de compétitions. Elles portent sur leurs performances mesurées par des capteurs et autres outils numérique et leur historique de blessures. Inspire-toi des sites web suivant : Statsport: STATSports | Athlete Monitoring For Teams, kinexon: Land a Career in Sports Data | KINEXON SPORTS, insep: Laboratoire Sport, Expertise et Performance | Laboratoires de recherche de l'INSEP et sportech: SporTech. Articles: Wearable Sensors for Real-Time Kinematics Analysis in Sports: A Review | IEEE Journals & Magazine | IEEE Xplore.
 Ton entreprise veut appliquer MERISE pour concevoir un système d'information. Tu es chargé de la partie analyse, c’est-à-dire de collecter les besoins auprès de l’entreprise. Elle a fait appel à un étudiant en ingénierie informatique pour réaliser ce projet, tu dois lui fournir les informations nécessaires pour qu’il applique ensuite lui-même les étapes suivantes de conception et développement de la base de données. 
 D’abord, établis les règles de gestions des données de ton entreprise, sous la forme d'une liste à puce. Elle doit correspondre aux informations que fournit quelqu’un qui connaît le fonctionnement de l’entreprise, mais pas comment se construit un système d’information.
@@ -14,7 +14,7 @@ Fournis donc les règles de gestion et le dictionnaire de données.
  Document word du prompt [Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
 
 
-# Réponse renvoyé par l'IA
+### Réponse renvoyé par l'IA
 
 1. Règles de gestion
 
