@@ -15,9 +15,8 @@ Fournis donc les règles de gestion et le dictionnaire de données.
 
 
 ### Réponse renvoyé par l'IA :
-
 1. Règles de gestion
-   
+
 Les athlètes
 
 Notre entreprise suit des athlètes de haut niveau. Chacun est identifié par son numéro de licence et on enregistre son nom, son prénom, sa date de naissance, son sexe et sa taille.
@@ -54,6 +53,7 @@ Le personnel
 Des intervenants (préparateurs physiques, analystes de données, médecins du sport, etc.) encadrent les séances et suivent les blessures. Chacun a un nom et une fonction.
 Une séance est encadrée par au moins un intervenant. Un intervenant encadre plusieurs séances.
 Chaque blessure est suivie par un intervenant (le médecin ou le kinésithérapeute qui s’en occupe).
+
 2. Dictionnaire de données (34 données)
 N°	Signification de la donnée	Type	Taille
 1	Numéro de licence de l’athlète	Alphanumérique	10
