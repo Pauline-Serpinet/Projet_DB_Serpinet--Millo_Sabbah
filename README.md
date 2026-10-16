@@ -1,3 +1,12 @@
+#Mini-projet : Conception et développement d’une base de données- PARTIE 1
+
+##
+Prompt envoyé à l'ia
+
+
+
+
+
 < ceci est la réponse renvoyé par l'IA >
 
 1. Règles de gestion
