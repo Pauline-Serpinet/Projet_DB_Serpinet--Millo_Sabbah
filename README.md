@@ -14,8 +14,6 @@ Fournis donc les règles de gestion et le dictionnaire de données.
  Document word du prompt [Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
 
 
-
-
 # Réponse renvoyé par l'IA
 
 1. Règles de gestion
@@ -99,11 +97,11 @@ Les formats de dates, la précision des décimales et les valeurs possibles indi
 Aucun regroupement de ces données n’est imposé. C’est à toi de décider comment les organiser, quels identifiants retenir et comment les relier.
 Pense aux données propres à un lien entre deux éléments plutôt qu’à un seul (résultat d’un athlète à un test, bilan d’un athlète lors d’une séance, date d’arrivée dans une équipe).
 
-Capture d'écran de la réponse renvoyé par l'I.A
-<img width="1114" height="1330" alt="image" src="https://github.com/user-attachments/assets/f9d187f4-52f4-4b32-845a-20f72e39f79e" />
-<img width="1084" height="992" alt="image" src="https://github.com/user-attachments/assets/024d48ed-4f94-4e6b-9ada-aed362a8d0c5" />
-<img width="1054" height="1368" alt="image" src="https://github.com/user-attachments/assets/75c9e7d1-f251-4483-b857-8d98278a9633" />
-<img width="1054" height="1100" alt="image" src="https://github.com/user-attachments/assets/27655b80-2721-44cd-8ddb-eb1f55ff64e4" />
+Fichier de la réponse renvoyé par l'IA [réponse renvoyé par l'IA.pdf](https://github.com/user-attachments/files/33536693/reponse.renvoye.par.l.IA.pdf)
+
+L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
+
+
 
 
 
