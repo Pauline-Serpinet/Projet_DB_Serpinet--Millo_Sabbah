@@ -106,7 +106,7 @@ L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exig
 
 Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, est normalisé en 3FN et comporte deux éléments de modélisation avancée qui sont :
 - une association récursive 
-- une entité faible et une entité forte
+- une entité faible (blessure) et une entité forte (athlète)
 
 Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 
