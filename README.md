@@ -1,7 +1,6 @@
-#Mini-projet : Conception et développement d’une base de données- PARTIE 1
+# Mini-projet : Conception et développement d’une base de données- PARTIE 1
 
-##
-Prompt envoyé à l'ia
+## Prompt envoyé à l'ia
 
 
 
