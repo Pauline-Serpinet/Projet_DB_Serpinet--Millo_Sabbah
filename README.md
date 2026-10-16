@@ -1,3 +1,4 @@
+
 # Mini-projet : Conception et développement d’une base de données- PARTIE 1
 
 ## Prompt envoyé à l'ia
@@ -7,6 +8,7 @@ D’abord, établis les règles de gestions des données de ton entreprise, sous
 Ensuite, à partir de ces règles, fournis un dictionnaire de données brutes avec les colonnes suivantes, regroupées dans un tableau : signification de la donnée, type, taille en nombre de caractères ou de chiffres. Il doit y avoir entre 25 et 35 données. Il sert à fournir des informations supplémentaires sur chaque donnée (taille et type) mais sans a priori sur comment les données vont être modélisées ensuite.
 Fournis donc les règles de gestion et le dictionnaire de données.
 
+[Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
 
 
 
