@@ -2,9 +2,9 @@
 # Mini-projet : Conception et développement d’une base de données- PARTIE 1
 
 ## Etape 1 : Analyser les besoins
-Pour ce projet, nous avons décidé de concevoir une base de données pour une entreprise spécialisée dans le suivi de la performance sportive, en modélisant la collecte de données métriques issues de capteurs connectés ainsi que l'historique médical et d'entraînement d'athlètes de haut niveau
+Pour ce projet, nous avons décidé de concevoir une base de données pour une entreprise spécialisée dans le suivi de la performance sportive, en modélisant la collecte de données métriques issues de capteurs connectés lors d'entraînement d'athlètes de haut niveau.
 
-### Prompt envoyé à l'ia
+### Prompt envoyé à l'ia :
 Tu travailles dans le domaine du sport. Ton entreprise a comme activité de mesurer les performances sportives des athlètes de haut niveau. C’est une entreprise comme Sportech et Kinexon, STATSport, FirstBeat, Zone7. Les données sont collectées sur des athlètes de haut niveau (individuels et en équipe), lors de leurs séances d'entraînement, de tests physiques et de compétitions. Elles portent sur leurs performances mesurées par des capteurs et autres outils numérique et leur historique de blessures. Inspire-toi des sites web suivant : Statsport: STATSports | Athlete Monitoring For Teams, kinexon: Land a Career in Sports Data | KINEXON SPORTS, insep: Laboratoire Sport, Expertise et Performance | Laboratoires de recherche de l'INSEP et sportech: SporTech. Articles: Wearable Sensors for Real-Time Kinematics Analysis in Sports: A Review | IEEE Journals & Magazine | IEEE Xplore.
 Ton entreprise veut appliquer MERISE pour concevoir un système d'information. Tu es chargé de la partie analyse, c’est-à-dire de collecter les besoins auprès de l’entreprise. Elle a fait appel à un étudiant en ingénierie informatique pour réaliser ce projet, tu dois lui fournir les informations nécessaires pour qu’il applique ensuite lui-même les étapes suivantes de conception et développement de la base de données. 
 D’abord, établis les règles de gestions des données de ton entreprise, sous la forme d'une liste à puce. Elle doit correspondre aux informations que fournit quelqu’un qui connaît le fonctionnement de l’entreprise, mais pas comment se construit un système d’information.
@@ -14,10 +14,10 @@ Fournis donc les règles de gestion et le dictionnaire de données.
  Document word du prompt [Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
 
 
-### Réponse renvoyé par l'IA
+### Réponse renvoyé par l'IA :
 
 1. Règles de gestion
-
+   
 Les athlètes
 
 Notre entreprise suit des athlètes de haut niveau. Chacun est identifié par son numéro de licence et on enregistre son nom, son prénom, sa date de naissance, son sexe et sa taille.
@@ -91,15 +91,9 @@ N°	Signification de la donnée	Type	Taille
 33	Nom de l’intervenant	Alphabétique	30
 34	Fonction de l’intervenant (préparateur physique, médecin, analyste…)	Alphabétique	40
 
-Remarques pour la suite de la conception
+Fichier de la réponse renvoyé par l'IA : [réponse renvoyéde par l'IA.pdf](https://github.com/user-attachments/files/33551236/reponse.renvoyede.par.l.IA.pdf)
 
-Les formats de dates, la précision des décimales et les valeurs possibles indiquées entre parenthèses sont des contraintes fournies par l’entreprise.
-Aucun regroupement de ces données n’est imposé. C’est à toi de décider comment les organiser, quels identifiants retenir et comment les relier.
-Pense aux données propres à un lien entre deux éléments plutôt qu’à un seul (résultat d’un athlète à un test, bilan d’un athlète lors d’une séance, date d’arrivée dans une équipe).
-
-Fichier de la réponse renvoyé par l'IA : [réponse renvoyé par l'IA.pdf](https://github.com/user-attachments/files/33536693/reponse.renvoye.par.l.IA.pdf)
-
-L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
+L’IA nous a renvoyé le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
 
 ## Etape 2 : MCD
 <img width="743" height="547" alt="image" src="https://github.com/user-attachments/assets/493112d7-2491-4aeb-9f4f-5a8f1fe7c745" />
