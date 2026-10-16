@@ -104,7 +104,7 @@ L’IAG nous renvoyer le nombre de données attendues, et correspondant aux exig
 ## Etape 2 : MCD
 <img width="743" height="547" alt="image" src="https://github.com/user-attachments/assets/493112d7-2491-4aeb-9f4f-5a8f1fe7c745" />
 
-Ce mcd, que nous avons modélisé grâce à l'outil de modélisation Looping, est normalisé en 3FN et comporte deux éléments de modélisation avancée qui sont :
+Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, est normalisé en 3FN et comporte deux éléments de modélisation avancée qui sont :
 - une association récursive 
 - une entité faible et une entité forte
 
