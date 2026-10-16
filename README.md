@@ -1,15 +1,17 @@
 
 # Mini-projet : Conception et développement d’une base de données- PARTIE 1
 
-## Prompt envoyé à l'ia
+## Etape 1 : Analyser les besoins
+Pour ce projet, nous avons décidé de concevoir une base de données pour une entreprise spécialisée dans le suivi de la performance sportive, en modélisant la collecte de données métriques issues de capteurs connectés ainsi que l'historique médical et d'entraînement d'athlètes de haut niveau
+
+# Prompt envoyé à l'ia
 Tu travailles dans le domaine du sport. Ton entreprise a comme activité de mesurer les performances sportives des athlètes de haut niveau. C’est une entreprise comme Sportech et Kinexon, STATSport, FirstBeat, Zone7. Les données sont collectées sur des athlètes de haut niveau (individuels et en équipe), lors de leurs séances d'entraînement, de tests physiques et de compétitions. Elles portent sur leurs performances mesurées par des capteurs et autres outils numérique et leur historique de blessures. Inspire-toi des sites web suivant : Statsport: STATSports | Athlete Monitoring For Teams, kinexon: Land a Career in Sports Data | KINEXON SPORTS, insep: Laboratoire Sport, Expertise et Performance | Laboratoires de recherche de l'INSEP et sportech: SporTech. Articles: Wearable Sensors for Real-Time Kinematics Analysis in Sports: A Review | IEEE Journals & Magazine | IEEE Xplore.
 Ton entreprise veut appliquer MERISE pour concevoir un système d'information. Tu es chargé de la partie analyse, c’est-à-dire de collecter les besoins auprès de l’entreprise. Elle a fait appel à un étudiant en ingénierie informatique pour réaliser ce projet, tu dois lui fournir les informations nécessaires pour qu’il applique ensuite lui-même les étapes suivantes de conception et développement de la base de données. 
 D’abord, établis les règles de gestions des données de ton entreprise, sous la forme d'une liste à puce. Elle doit correspondre aux informations que fournit quelqu’un qui connaît le fonctionnement de l’entreprise, mais pas comment se construit un système d’information.
 Ensuite, à partir de ces règles, fournis un dictionnaire de données brutes avec les colonnes suivantes, regroupées dans un tableau : signification de la donnée, type, taille en nombre de caractères ou de chiffres. Il doit y avoir entre 25 et 35 données. Il sert à fournir des informations supplémentaires sur chaque donnée (taille et type) mais sans a priori sur comment les données vont être modélisées ensuite.
 Fournis donc les règles de gestion et le dictionnaire de données.
 
-### Document word du prompt
-[Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
+ Document word du prompt [Mini_Projet_1_Base_Prompt-modifié (1).docx](https://github.com/user-attachments/files/33534944/Mini_Projet_1_Base_Prompt-modifie.1.docx)
 
 
 
@@ -96,6 +98,8 @@ Remarques pour la suite de la conception
 Les formats de dates, la précision des décimales et les valeurs possibles indiquées entre parenthèses sont des contraintes fournies par l’entreprise.
 Aucun regroupement de ces données n’est imposé. C’est à toi de décider comment les organiser, quels identifiants retenir et comment les relier.
 Pense aux données propres à un lien entre deux éléments plutôt qu’à un seul (résultat d’un athlète à un test, bilan d’un athlète lors d’une séance, date d’arrivée dans une équipe).
+
+Capture d'écran de la réponse renvoyé par l'I.A
 <img width="381" height="763" alt="image" src="https://github.com/user-attachments/assets/69ec5558-4a2c-45c5-8287-0a74be48247b" />
 <img width="251" height="649" alt="image" src="https://github.com/user-attachments/assets/e94219b0-9e6a-4a5b-aa46-c2f612e2946e" />
 
