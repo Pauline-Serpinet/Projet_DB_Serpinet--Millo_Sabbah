@@ -103,9 +103,8 @@ Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, es
 - une entité faible (blessure) et une entité forte (athlète)
 
 Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
-
-#PARTIE 2 
-##Etape 3 : MLD et MPD
+# PARTIE 2 
+## Etape 3 : MLD et MPD
 
 
 
