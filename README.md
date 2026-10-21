@@ -104,6 +104,9 @@ Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, es
 
 Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 
+#PARTIE 2 
+##Etape 3 : MLD et MPD
+
 
 
 
