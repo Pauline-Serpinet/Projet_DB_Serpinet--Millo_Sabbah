@@ -112,6 +112,7 @@ Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 ## Etape 5 : interrogation de la BD
 Scénario d'utilisation : 
 
+Etude des plans d’exécution d’une requête :
 
 
 
