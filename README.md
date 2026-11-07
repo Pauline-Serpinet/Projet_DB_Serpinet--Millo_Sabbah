@@ -107,6 +107,10 @@ Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 ## Etape 3 : MLD et MPD
 <img width="690" height="198" alt="image" src="https://github.com/user-attachments/assets/0cc34a83-fcca-4f38-83ca-ded97c01b6df" />
 
+## Etape 4 : insertions des données
+
+## Etape 5 : interrogation de la BD
+Scénario d'utilisation : 
 
 
 
