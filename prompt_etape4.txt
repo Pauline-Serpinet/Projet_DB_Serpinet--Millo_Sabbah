@@ -1,0 +1,87 @@
+Donne les requêtes d'insertion permettant de remplir la base de données dont le modèle relationnel est le suivant :
+
+Discipline (nom_discipline VARCHAR(40), mode_pratique VARCHAR(10))
+  clé primaire : nom_discipline
+Equipe (nom_equipe VARCHAR(50), #nom_discipline)
+  clé primaire : nom_equipe
+Modele_capteur (nom_modele VARCHAR(40), type_capteur VARCHAR(30))
+  clé primaire : nom_modele
+Test_physique (nom_test VARCHAR(40), unite_resultat VARCHAR(10))
+  clé primaire : nom_test
+Intervenant (id_intervenant SMALLINT, fonction VARCHAR(40), nom_intervenant VARCHAR(30), #id_intervenant_superviseur)
+  clé primaire : id_intervenant ; id_intervenant_superviseur est facultatif (NULL possible) et référence id_intervenant
+Athlete (numero_licence VARCHAR(10), nom_athlete VARCHAR(30), prenom_athlete VARCHAR(30), date_naissance DATE, sexe CHAR(1), taille SMALLINT, #nom_discipline)
+  clé primaire : numero_licence
+Capteur (numero_serie VARCHAR(12), date_etalonnage DATE, #nom_modele)
+  clé primaire : numero_serie
+Seance (code_seance VARCHAR(8), date_heure_debut DATETIME, duree SMALLINT, type_seance VARCHAR(15), nom_lieu VARCHAR(50), #nom_equipe)
+  clé primaire : code_seance ; nom_equipe est facultatif (NULL possible)
+Blessure (#numero_licence, numero_blessure TINYINT, date_blessure DATE, zone_corps VARCHAR(40), gravite VARCHAR(10), date_reprise DATE, #code_seance, #id_intervenant)
+  clé primaire : (numero_licence, numero_blessure) ; date_reprise et code_seance sont facultatifs (NULL possible)
+Appartenir (#numero_licence, #nom_equipe, poste_occupe VARCHAR(30), date_arrivee DATE)
+  clé primaire : (numero_licence, nom_equipe)
+Participer (#numero_licence, #code_seance, distance_totale INT, vitesse_max DECIMAL(3,1), fc_moyenne SMALLINT, fc_max SMALLINT, charge_entrainement DECIMAL(6,1))
+  clé primaire : (numero_licence, code_seance) ; distance_totale, vitesse_max, fc_moyenne, fc_max et charge_entrainement sont facultatifs (NULL possible)
+Encadrer (#code_seance, #id_intervenant)
+  clé primaire : (code_seance, id_intervenant)
+Porter (#numero_licence, #numero_serie, #code_seance)
+  clé primaire : (numero_licence, numero_serie, code_seance)
+Passer (#numero_licence, #code_seance, #nom_test, resultat_test DECIMAL(6,2))
+  clé primaire : (numero_licence, code_seance, nom_test)
+
+Les clés primaires sont indiquées après chaque relation. Les clés étrangères sont identifiées par des #, et ont le même nom que les clés primaires auxquelles elles font référence (sauf id_intervenant_superviseur, qui référence id_intervenant). Les valeurs de id_intervenant sont fournies explicitement (de 1 à 10), sans auto-incrément.
+
+Il doit y avoir : 6 lignes dans Discipline, 6 dans Equipe, 6 dans Modele_capteur, 25 dans Capteur, 6 dans Test_physique, 10 dans Intervenant, 40 dans Athlete (dont 30 athlètes de disciplines collectives, répartis à raison de 5 par équipe, et 10 athlètes de disciplines individuelles), 30 dans Seance (dont 20 séances collectives avec une équipe et 10 séances individuelles sans équipe), 20 dans Blessure.
+Les disciplines sont au nombre de 6, dont voici les caractéristiques :
+- nom : Football, mode_pratique : collectif
+- nom : Rugby, mode_pratique : collectif
+- nom : Handball, mode_pratique : collectif
+- nom : Athletisme, mode_pratique : individuel
+- nom : Natation, mode_pratique : individuel
+- nom : Cyclisme, mode_pratique : individuel
+Il y a 2 équipes par discipline collective. Les modèles de capteurs sont de types variés (GPS, cardiofréquencemètre, centrale inertielle). Les tests physiques sont par exemple : sprint de 30 m (s), saut vertical (cm), test d'endurance (m). Les intervenants sont des préparateurs physiques, des analystes de données, des médecins du sport et des kinésithérapeutes ; certains ont un superviseur, d'autres non (NULL). Les séances ont lieu entre le 01/01/2026 et le 31/10/2026, à des dates et heures variées. Plusieurs lieux contiennent le mot « Stade » (par exemple « Stade Jean-Bouin »), d'autres sont des piscines, pistes ou salles.
+
+Pour que la base soit exploitable, assure-toi que :
+- chaque athlète d'une discipline collective a exactement une ligne dans Appartenir (dans une équipe de sa discipline) ; les athlètes de disciplines individuelles n'en ont aucune ;
+- chaque séance a au moins un intervenant dans Encadrer ;
+- une séance individuelle (nom_equipe vide) a exactement un athlète dans Participer ; une séance collective a tous les athlètes de l'équipe dans Participer ;
+- environ 85 % des lignes de Participer ont un bilan complet (distance, vitesse, fréquences, charge), avec au moins un capteur correspondant dans Porter pour la même séance et le même athlète ; les autres ont leurs cinq valeurs à NULL ;
+- un capteur n'est jamais porté par deux athlètes sur des séances qui se chevauchent dans le temps, et quelques capteurs ne sont jamais portés ;
+- seules les séances de type 'test' ont des lignes dans Passer, et uniquement pour les athlètes qui participent à cette séance (chaque test est passé par au moins 3 athlètes différents) ;
+- une blessure ne survient jamais pendant une séance de type 'test' (code_seance vaut alors NULL, ou référence une séance d'entraînement ou de compétition), et elle est suivie par un intervenant de fonction médecin du sport ou kinésithérapeute ; environ 30 % des blessures n'ont pas encore de date de reprise ; plusieurs athlètes ont au moins 2 blessures et plusieurs n'en ont aucune ; les zones du corps incluent des genoux et des chevilles (par exemple « Genou gauche », « Cheville droite ») ;
+- les valeurs sont réalistes et variées : certaines athlètes féminines sont nées entre 1995 et 2002, certaines fréquences cardiaques maximales dépassent 190 bpm avec des vitesses maximales entre 30 et 40 km/h, certains athlètes cumulent plus de 50 km, certaines charges moyennes dépassent 250, certains capteurs ont été étalonnés en 2026, et certains intervenants encadrent plus de 300 minutes de séances au total.
+
+Les clés étrangères doivent faire référence aux clés primaires existantes : donne les lignes en commençant par remplir les tables dans lesquelles il n'y a pas de clés étrangères (Discipline, Modele_capteur, Test_physique), puis les tables dans lesquelles les clés étrangères font références à des clés primaires des tables déjà remplies, dans cet ordre : Intervenant (en insérant d'abord ceux sans superviseur), Equipe, Athlete, Capteur, Seance, Appartenir, Blessure, Encadrer, Porter, Participer, Passer.
+
+Les données doivent respecter les contraintes de validation suivantes :
+
+ALTER TABLE Discipline
+  ADD CONSTRAINT ck_discipline_mode
+  CHECK (mode_pratique IN ('individuel', 'collectif'));
+
+ALTER TABLE Athlete
+  ADD CONSTRAINT ck_athlete_sexe   CHECK (sexe IN ('F', 'M')),
+  ADD CONSTRAINT ck_athlete_taille CHECK (taille BETWEEN 100 AND 250);
+
+ALTER TABLE Seance
+  ADD CONSTRAINT ck_seance_type
+  CHECK (type_seance IN ('entrainement', 'test', 'competition')),
+  ADD CONSTRAINT ck_seance_duree CHECK (duree > 0);
+
+ALTER TABLE Participer
+  ADD CONSTRAINT ck_part_distance CHECK (distance_totale >= 0),
+  ADD CONSTRAINT ck_part_vitesse  CHECK (vitesse_max >= 0),
+  ADD CONSTRAINT ck_part_fc       CHECK (fc_moyenne BETWEEN 30 AND 250 AND fc_max BETWEEN 30 AND 250 AND fc_max >= fc_moyenne),
+  ADD CONSTRAINT ck_part_charge   CHECK (charge_entrainement >= 0);
+
+ALTER TABLE Blessure
+  ADD CONSTRAINT ck_blessure_gravite
+  CHECK (gravite IN ('legere', 'moderee', 'grave')),
+  ADD CONSTRAINT ck_blessure_reprise
+  CHECK (date_reprise IS NULL OR date_reprise >= date_blessure);
+
+Elles sont complétées par les règles suivantes, appliquées par des triggers : une équipe appartient à une discipline collective ; un athlète n'appartient qu'à une équipe de sa propre discipline ; les tests physiques (table Passer) ne se passent que pendant une séance de type 'test' ; une blessure ne survient pas pendant une séance de type 'test' ; un capteur n'est jamais porté par deux athlètes en même temps ; un bilan renseigné dans Participer suppose un capteur dans Porter pour le même athlète et la même séance.
+
+Utilise les valeurs sans accent pour type_seance ('entrainement', 'test', 'competition') et gravite ('legere', 'moderee', 'grave'). Assure-toi que les noms et prénoms des athlètes font référence à des origines variées et sont mixtes (femmes et hommes).
+
+Fournis l'ensemble sous la forme d'un script SQL prêt à être exécuté 
