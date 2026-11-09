@@ -167,7 +167,7 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes
 
 Total : 30 + 846 + 28 + 720 + 18 = 1 642 instructions
 
-## Conclusion : L'arbre 2 eset le plan le plus optimisé
+## Conclusion : L'arbre 2 est le plan le plus optimisé
 
 Les trois plans donnent le même résultat : 18 athlètes, et seul le nombre d'instructions change.
 Plus on filtre tôt, plus les tables à joindre sont petites. Dans le plan 2, les deux sélections réduisent "Participer" de 110 à 36 lignes et "Seance" de 30 à 9 avant toute jointure. La jointure σ(Participer) ⋈ σ(Seance) ne coûte alors que 36 × 9 = 324 instructions, contre 4 400 pour Athlete ⋈ Participer dans le plan 1.
