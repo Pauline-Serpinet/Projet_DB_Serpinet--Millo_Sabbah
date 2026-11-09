@@ -154,7 +154,7 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes
 
 Total : 94 + 30 + 324 + 720 + 18 = 1 186 instructions.
 
-#Plan 3 : une sélection avant la jointure et l’autre après
+# Plan 3 : une sélection avant la jointure et l’autre après
 <img width="1002" height="278" alt="image" src="https://github.com/user-attachments/assets/368b8058-ede5-473b-a9c4-58475ba02400" />
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/d214ee0a-7f89-400c-b2de-4d1b1c06c25f" />
 
@@ -166,6 +166,13 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes.
 π nom_athlete, prenom_athlete : scanne 18 lignes, soit 18 instructions.
 
 Total : 30 + 846 + 28 + 720 + 18 = 1 642 instructions
+
+Conclusion : L'arbre 2 eset le plan le plus optimisé
+Les trois plans donnent le même résultat : 18 athlètes, et seul le nombre d'instructions change.
+Plus on filtre tôt, plus les tables à joindre sont petites. Dans le plan 2, les deux sélections réduisent "Participer" de 110 à 36 lignes et "Seance" de 30 à 9 avant toute jointure. La jointure σ(Participer) ⋈ σ(Seance) ne coûte alors que 36 × 9 = 324 instructions, contre 4 400 pour Athlete ⋈ Participer dans le plan 1.
+
+**Conclusion** : l'arbre du plan 2 correspond au plan d'exécution optimisé.Il coûte 1 202 instructions, soit environ 6,5 fois moins que le plan 1 (7 828) et 1,5 fois moins que le plan 3 (1 791).
+
 
 
 
