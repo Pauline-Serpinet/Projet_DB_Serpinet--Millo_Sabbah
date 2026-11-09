@@ -110,7 +110,7 @@ Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 ## Etape 4 : insertions des données
 
 ## Etape 5 : interrogation de la BD
-Scénario d'utilisation :
+### Scénario d'utilisation :
 
 Utilisateur :
 Le préparateur physique. Il travaille avec le staff médical (kinésithérapeutes, médecins) et les entraîneurs.
