@@ -127,7 +127,7 @@ En début de semaine, il prépare le planning de charge d'entraînement et déci
 -	Intervenants et leur superviseur.
 
 ## Etude des plans d’exécution d’une requête 
-3)Pour cette étape, nous avons selectionné la requête 26 qui possède les opérateurs : σ (sélection) et π (projection)
+3)Pour cette étape, nous avons selectionné la requête 26 qui possède les opérateurs : σ (sélection), π (projection) et ⨝ (jointure)
 
 ### Plan 1  : On fait d'abord jointures d’abord et la sélection à la fin
 <img width="1002" height="378" alt="image" src="https://github.com/user-attachments/assets/51c5552a-da06-4577-bb35-042883b6c656" />
