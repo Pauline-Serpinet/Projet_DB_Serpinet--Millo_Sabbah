@@ -117,14 +117,22 @@ Le préparateur physique. Il travaille avec le staff médical (kinésithérapeut
 
 Contexte : 
 En début de semaine, il prépare le planning de charge d'entraînement et décide qui peut reprendre, qui doit être ménagé et quel matériel doit être recalibré. Pour cela, il doit extraire les informations suivantes :
--Taille athlète, âge athlète, nom athlète.
+
+-Taille athlète, âge athlète, nom athlète et discipline.
 -	Zones touchées, gravité de la blessure, blessures non soldées, soignant responsable et athlètes jamais blessés.
 -	Charge moyenne, distance cumulée, fréquence cardiaque et comparaison à la moyenne du club.
 -	Matchs et compétitions de la saison, lieux utilisés, équipes inactives.
 -	Résultats moyens, minimum, maximum par test physique.
 -	Capteurs à ré-étalonner, capteur porté par athlète et par séance.
--	Intervenants et leur superviseur
+-	Intervenants et leur superviseur.
 
+-Taille athlète, âge athlète, nom athlète et discipline.
+-	Zones touchées, gravité de la blessure, blessures non soldées, soignant responsable et athlètes jamais blessés.
+-	Charge moyenne, distance cumulée, fréquence cardiaque et comparaison à la moyenne du club.
+-	Matchs et compétitions de la saison, lieux utilisés, équipes inactives.
+-	Résultats moyens, minimum, maximum par test physique.
+-	Capteurs à ré-étalonner, capteur porté par athlète et par séance.
+-	Intervenants et leur superviseur.
 Etude des plans d’exécution d’une requête :
 
 
