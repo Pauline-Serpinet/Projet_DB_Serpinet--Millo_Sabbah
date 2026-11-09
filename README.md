@@ -130,8 +130,8 @@ En début de semaine, il prépare le planning de charge d'entraînement et déci
 3)Pour cette étape, nous avons selectionné la requète 25 qui possède les opérateurs : σ (sélection) et π (projection)
 
 # Plan 1  : On fait d'abord jointures d’abord et la sélection à la fin
-<img width="945" height="275" alt="image" src="https://github.com/user-attachments/assets/fa61570d-e845-48e0-852a-bfbfc9eb77a5" />
-<img width="677" height="778" alt="image" src="https://github.com/user-attachments/assets/9ca11681-16e9-4c45-a0de-666f83802fb6" />
+<img width="300" height="275" alt="image" src="https://github.com/user-attachments/assets/fa61570d-e845-48e0-852a-bfbfc9eb77a5" />
+<img width="500" height="578" alt="image" src="https://github.com/user-attachments/assets/9ca11681-16e9-4c45-a0de-666f83802fb6" />
 
 Nombre d'instructions :
 Athlete ⋈ Participer : 40 × 94 = 3 760 instructions, résultat de 94 lignes
@@ -142,8 +142,8 @@ Athlete ⋈ Participer : 40 × 94 = 3 760 instructions, résultat de 94 lignes
 Total : 3 760 + 2 820 + 94 + 18 = 6 692 instructions
 
 # Plan 2: les deux sélections avant les jointures
-<img width="945" height="219" alt="image" src="https://github.com/user-attachments/assets/cb71bc35-a25f-4cd8-97a7-de5379a86136" />
-<img width="677" height="778" alt="image" src="https://github.com/user-attachments/assets/d97e99e5-f8dc-46e1-a502-16320983c157" />
+<img width="300" height="275" alt="image" src="https://github.com/user-attachments/assets/cb71bc35-a25f-4cd8-97a7-de5379a86136" />
+<img width="500" height="5783 alt="image" src="https://github.com/user-attachments/assets/d97e99e5-f8dc-46e1-a502-16320983c157" />
 
  Nombre d'instructions :
 σ fc_max > 190 (Participer) : scanne 94 lignes, soit 94 instructions, résultat de 36 lignes
@@ -155,8 +155,8 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes
 Total : 94 + 30 + 324 + 720 + 18 = 1 186 instructions.
 
 #Plan 3 : une sélection avant la jointure et l’autre après
-<img width="945" height="275" alt="image" src="https://github.com/user-attachments/assets/368b8058-ede5-473b-a9c4-58475ba02400" />
-<img width="683" height="881" alt="image" src="https://github.com/user-attachments/assets/d214ee0a-7f89-400c-b2de-4d1b1c06c25f" />
+<img width="300" height="275" alt="image" src="https://github.com/user-attachments/assets/368b8058-ede5-473b-a9c4-58475ba02400" />
+<img width="500" height="578" alt="image" src="https://github.com/user-attachments/assets/d214ee0a-7f89-400c-b2de-4d1b1c06c25f" />
 
 Nombre d'instructions :
 σ type_seance = ‘competition’ (Seance) : scanne 30 lignes, soit 30 instructions, résultat de 9 lignes.
