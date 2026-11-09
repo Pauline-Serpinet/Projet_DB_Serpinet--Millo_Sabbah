@@ -96,7 +96,7 @@ Fichier de la réponse renvoyé par l'IA : [réponse renvoyéde par l'IA.pdf](ht
 L’IA nous a renvoyé le nombre de données attendues, et correspondant aux exigences formulées dans notre prompt, nous avons donc décider de ne pas y apporter de modifications.
 
 ## Etape 2 : MCD
-<img width="743" height="547" alt="image" src="https://github.com/user-attachments/assets/493112d7-2491-4aeb-9f4f-5a8f1fe7c745" />
+<img width="743" height="547" alt="698895846-4094faea-f7d1-4570-abff-e9fa92de2b53" src="https://github.com/user-attachments/assets/c5240444-12d0-4adf-8019-26b1e936a69b" />
 
 Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, est normalisé en 3FN et comporte deux éléments de modélisation avancée qui sont :
 - une association récursive (intervenant)
@@ -105,7 +105,7 @@ Ce MCD, que nous avons modélisé grâce à l'outil de modélisation Looping, es
 Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 # PARTIE 2 
 ## Etape 3 : MLD et MPD
-<img width="690" height="198" alt="image" src="https://github.com/user-attachments/assets/0cc34a83-fcca-4f38-83ca-ded97c01b6df" />
+<img width="1204" height="366" alt="698887657-d0c79125-604b-4587-b323-1b38e70e06c8" src="https://github.com/user-attachments/assets/b707c57b-2b7a-48ea-ba61-d4ea35eb851a" />
 
 ## Etape 4 : insertions des données
 
