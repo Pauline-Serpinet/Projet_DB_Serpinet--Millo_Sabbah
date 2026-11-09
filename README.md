@@ -126,10 +126,10 @@ En début de semaine, il prépare le planning de charge d'entraînement et déci
 -	Capteurs à ré-étalonner, capteur porté par athlète et par séance.
 -	Intervenants et leur superviseur.
 
-### Etude des plans d’exécution d’une requête 
-3)Pour cette étape, nous avons selectionné la requète 25 qui possède les opérateurs : σ (sélection) et π (projection)
+## Etude des plans d’exécution d’une requête 
+3)Pour cette étape, nous avons selectionné la requête 26 qui possède les opérateurs : σ (sélection) et π (projection)
 
-# Plan 1  : On fait d'abord jointures d’abord et la sélection à la fin
+### Plan 1  : On fait d'abord jointures d’abord et la sélection à la fin
 <img width="1002" height="378" alt="image" src="https://github.com/user-attachments/assets/51c5552a-da06-4577-bb35-042883b6c656" />
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/9ca11681-16e9-4c45-a0de-666f83802fb6" />
 
@@ -141,7 +141,7 @@ Athlete ⋈ Participer : 40 × 94 = 3 760 instructions, résultat de 94 lignes
 
 Total : 3 760 + 2 820 + 94 + 18 = 6 692 instructions
 
-# Plan 2: les deux sélections avant les jointures
+### Plan 2: les deux sélections avant les jointures
 <img width="1002" height="278" alt="image" src="https://github.com/user-attachments/assets/cb71bc35-a25f-4cd8-97a7-de5379a86136" />
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/d97e99e5-f8dc-46e1-a502-16320983c157" />
 
@@ -154,7 +154,7 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes
 
 Total : 94 + 30 + 324 + 720 + 18 = 1 186 instructions.
 
-# Plan 3 : une sélection avant la jointure et l’autre après
+### Plan 3 : une sélection avant la jointure et l’autre après
 <img width="1002" height="278" alt="image" src="https://github.com/user-attachments/assets/368b8058-ede5-473b-a9c4-58475ba02400" />
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/d214ee0a-7f89-400c-b2de-4d1b1c06c25f" />
 
@@ -167,7 +167,7 @@ Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes.
 
 Total : 30 + 846 + 28 + 720 + 18 = 1 642 instructions
 
-# Conclusion : L'arbre 2 eset le plan le plus optimisé
+## Conclusion : L'arbre 2 eset le plan le plus optimisé
 
 Les trois plans donnent le même résultat : 18 athlètes, et seul le nombre d'instructions change.
 Plus on filtre tôt, plus les tables à joindre sont petites. Dans le plan 2, les deux sélections réduisent "Participer" de 110 à 36 lignes et "Seance" de 30 à 9 avant toute jointure. La jointure σ(Participer) ⋈ σ(Seance) ne coûte alors que 36 × 9 = 324 instructions, contre 4 400 pour Athlete ⋈ Participer dans le plan 1.
