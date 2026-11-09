@@ -110,14 +110,13 @@ Nous n'avons pas ajouté d'entités supplémentaires à celles du dictionnaire.
 ## Etape 4 : insertions des données
 
 ## Etape 5 : interrogation de la BD
-### Scénario d'utilisation :
+### Scénario d'utilisation 
 
 Utilisateur :
 Le préparateur physique. Il travaille avec le staff médical (kinésithérapeutes, médecins) et les entraîneurs.
 
 Contexte : 
 En début de semaine, il prépare le planning de charge d'entraînement et décide qui peut reprendre, qui doit être ménagé et quel matériel doit être recalibré. Pour cela, il doit extraire les informations suivantes :
-
 -Taille athlète, âge athlète, nom athlète.
 -	Zones touchées, gravité de la blessure, blessures non soldées, soignant responsable et athlètes jamais blessés.
 -	Charge moyenne, distance cumulée, fréquence cardiaque et comparaison à la moyenne du club.
