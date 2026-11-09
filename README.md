@@ -130,7 +130,7 @@ En début de semaine, il prépare le planning de charge d'entraînement et déci
 3)Pour cette étape, nous avons selectionné la requète 25 qui possède les opérateurs : σ (sélection) et π (projection)
 
 # Plan 1  : On fait d'abord jointures d’abord et la sélection à la fin
-<img width="1002" height="278" alt="image" src="https://github.com/user-attachments/assets/ea79c432-fb01-4ddd-a7ed-46218cc16a3f" />
+<img width="1002" height="378" alt="image" src="https://github.com/user-attachments/assets/51c5552a-da06-4577-bb35-042883b6c656" />
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/9ca11681-16e9-4c45-a0de-666f83802fb6" />
 
 Nombre d'instructions :
