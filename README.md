@@ -146,10 +146,10 @@ Total : 3 760 + 2 820 + 94 + 18 = 6 692 instructions
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/d97e99e5-f8dc-46e1-a502-16320983c157" />
 
  Nombre d'instructions :
-σ fc_max > 190 (Participer) : scanne 94 lignes, soit 94 instructions, résultat de 36 lignes
-σ type_seance = ‘competition’ (Seance) : scanne 30 lignes, soit 30 instructions, résultat de 9 lignes
-σ(Participer) ⋈ σ(Seance) : 36 × 9 = 324 instructions, résultat de 18 lignes
-Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes
+σ fc_max > 190 (Participer) : scanne 94 lignes, soit 94 instructions, résultat de 36 lignes  
+σ type_seance = ‘competition’ (Seance) : scanne 30 lignes, soit 30 instructions, résultat de 9 lignes  
+σ(Participer) ⋈ σ(Seance) : 36 × 9 = 324 instructions, résultat de 18 lignes  
+Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes  
 π nom_athlete, prenom_athlete : scanne 18 lignes, soit 18 instructions
 
 Total : 94 + 30 + 324 + 720 + 18 = 1 186 instructions.
@@ -159,11 +159,11 @@ Total : 94 + 30 + 324 + 720 + 18 = 1 186 instructions.
 <img width="392" height="345" alt="image" src="https://github.com/user-attachments/assets/d214ee0a-7f89-400c-b2de-4d1b1c06c25f" />
 
 Nombre d'instructions :
-σ type_seance = ‘competition’ (Seance) : scanne 30 lignes, soit 30 instructions, résultat de 9 lignes.
-Participer ⋈ σ(Seance) : 94 × 9 = 846 instructions, résultat de 28 lignes.
-σ fc_max > 190 : scanne 28 lignes, soit 28 instructions, résultat de 18 lignes.
-Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes.
-π nom_athlete, prenom_athlete : scanne 18 lignes, soit 18 instructions.
+σ type_seance = ‘competition’ (Seance) : scanne 30 lignes, soit 30 instructions, résultat de 9 lignes  
+Participer ⋈ σ(Seance) : 94 × 9 = 846 instructions, résultat de 28 lignes  
+σ fc_max > 190 : scanne 28 lignes, soit 28 instructions, résultat de 18 lignes  
+Athlete ⋈ (…) : 40 × 18 = 720 instructions, résultat de 18 lignes  
+π nom_athlete, prenom_athlete : scanne 18 lignes, soit 18 instructions
 
 Total : 30 + 846 + 28 + 720 + 18 = 1 642 instructions
 
